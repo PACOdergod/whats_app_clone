@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'placeholder_widget.dart';
+import 'chat_list_widget.dart';
 
 class Whatsapp extends StatefulWidget {
   @override
@@ -42,6 +44,15 @@ class _WhatsappState extends State<Whatsapp>
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.ac_unit),
+      ),
+      body: TabBarView(
+        controller: _tabController,
+        children: <Widget>[
+          PlaceHolderWidget(),
+          ChatListWidget(),
+          PlaceHolderWidget(),
+          PlaceHolderWidget(),
+        ],
       ),
     );
   }
