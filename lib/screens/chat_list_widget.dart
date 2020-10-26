@@ -25,9 +25,12 @@ class ChatListWidget extends StatelessWidget {
 
 List<ChatItem> data = [
   ChatItem(
-      avatarUrl:
-          'https://es.web.img2.acsta.net/newsv7/19/10/03/16/22/4411665.jpg',
-      name: 'Avatar',
-      message: 'La nueva pelcula de avatar saldra el proximo año',
-      date: DateTime.parse('2020-13-02 18:32'))
+    avatarUrl:
+        'https://aws.revistavanityfair.es/prod/designs/v1/assets/785x589/188829.jpg',
+    name: 'Emmmmy',
+    message: 'Oye... te extraño, ya contestame',
+    date: DateTime.parse('2020-13-02 18:32'),
+    unreadMessage: 12,
+    checked: ChatStatus.check,
+  ),
 ];
